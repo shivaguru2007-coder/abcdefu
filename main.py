@@ -6,7 +6,7 @@ import requests
 
 TOKEN = "Rupees "
 
-BOT_TOKEN = "5225565143:AAFvVKr0TyiAl0DW7kkfZiZnQ2c7XKcxu4g"
+BOT_TOKEN = "5185090932:AAF5ax4hz3YDwZiX3JCyBXhxh4mfR6DBvHM"
 
 PAYMENT_CHANNEL = "@pythonbotesting"
 OWNER_ID = 1235084297
@@ -323,7 +323,7 @@ def query_handler(call):
         #            cur_time2 = int((time.time()))
         #            withdraw[user_id] = cur_time2
                 bot.edit_message_text(chat_id=user, message_id=call.message.message_id, text="✅ Withdrawl initiated successfully!\n\n"+asd+" .",parse_mode="html")
-                bot.send_message(PAYMENT_CHANNEL, "<b>🏧NEW WITHDRAW DONE SUCCESSFULLY🏦\n\n🍕 \n\n 💰 Status = SUCCESSFULLY PAID \n\n Amount</b> : "+str(amount)+" <b>Paytm Cash \n🥪 User</b> : "+str(message.chat.username)+"\n\n🍔 <b>Bot</b> : @"+bot.get_me().username+"⚡️KEEP SHARING AND ENJOYING OUR BOTS😉😊✅\n\n@Thefirenetwork🔥\n\n@Thefirebots 🔥", parse_mode="html")
+                bot.send_message(PAYMENT_CHANNEL, "<b>🏧NEW WITHDRAW DONE SUCCESSFULLY🏦\n\n🍕 \n\n 💰 Status = SUCCESSFULLY PAID \n\n Amount</b> : "+str(amount)+" <b>Paytm Cash \n🥪 User</b> : "+str@(message.chat.username)+"\n\n🍔 <b>Bot</b> : @"+bot.get_me().username+"⚡️KEEP SHARING AND ENJOYING OUR BOTS😉😊✅\n\n@Thefirenetwork🔥\n\n@Thefirebots 🔥", parse_mode="html")
                 return menu(message.chat.id)
             except:
                 bot.send_message(message.chat.id, ".menu", parse_mode="Markdown")
@@ -403,7 +403,7 @@ def unban(message):
         #time.sleep(0.8)
     except:
         bot.send_message(
-            message.chat.id, "This user is may not banned if you not sure you can contact our dev @SGking27_xd")
+            message.chat.id, "This user is may not banned if you not sure you can contact our dev @alien_parii_25")
         return
 
 
@@ -608,7 +608,7 @@ def send_text(message):
             user_id = message.chat.id
             user = str(user_id)
             data = json.load(open('paytmusers.json', 'r'))
-            msg = "<b>📊 Total members : {} Users\nThis Bot is Made By @SGking27_xd Dm me To buy\n💎 Total successful Withdraw : {} {}</b>"
+            msg = "<b>📊 Total members : {} Users\nThis Bot is Made By @alien_parii_25 Dm me To buy\n💎 Total successful Withdraw : {} {}</b>"
             msg = msg.format(data['total'], data['totalwith'], TOKEN)
             bot.send_message(user_id, msg, parse_mode="html")
             return
